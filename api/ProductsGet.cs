@@ -11,7 +11,7 @@ using System.Collections.Generic;
 
 namespace ShopAtHome
 {
-    public static class Products
+    public static class ProductsGet
     {
         [FunctionName("products-get")]
         public static async Task<IActionResult> Get(
