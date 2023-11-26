@@ -62,8 +62,8 @@ export class NavComponent implements OnInit {
   async sayHello() {
     try {
       const response = await fetch('/api/hello');
-      const payload = await response.json();
-      alert(payload.message);
+      const payload = await response.text();
+      alert(payload);
     } catch (error) {
       console.error(error.message);
     }
