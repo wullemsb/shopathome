@@ -34,6 +34,9 @@ import { UserInfo } from '../model';
       <p>{{ userInfo?.userDetails }}</p>
       <p>{{ userInfo?.identityProvider }}</p>
     </div>
+    <div>
+       <button (click)="sayHello()" class="btn btn-primary btn-block btn-lg">Say Hello</button>
+    </div>
   `,
 })
 export class NavComponent implements OnInit {
@@ -53,6 +56,16 @@ export class NavComponent implements OnInit {
     } catch (error) {
       console.error('No profile could be found');
       return undefined;
+    }
+  }
+
+  async sayHello() {
+    try {
+      const response = await fetch('/api/hello');
+      const payload = await response.json();
+      alert(payload.message);
+    } catch (error) {
+      console.error(error.message);
     }
   }
 }
