@@ -25,9 +25,9 @@ app.MapGet("/api/hello", ([FromHeader(Name= "X-MS-CLIENT-PRINCIPAL")] string? to
     {
         var decodedToken = Convert.FromBase64String(token);
         var decodedString = Encoding.UTF8.GetString(decodedToken);
-        var tokenObject = JsonSerializer.Deserialize<Dictionary<string, string>>(decodedString);
-        var name = tokenObject["userDetails"];
-        return $"hello {name}";
+        // var tokenObject = JsonSerializer.Deserialize<Dictionary<string, string>>(decodedString);
+        // var name = tokenObject["userDetails"];
+        return $"hello world - {decodedString}";
     }
 
     return $"hello world-{token}";
