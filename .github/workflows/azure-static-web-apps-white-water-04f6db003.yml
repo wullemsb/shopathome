@@ -5,6 +5,7 @@ on:
     branches:
       - main
       - api
+      - withoutapi
   pull_request:
     types: [opened, synchronize, reopened, closed]
     branches:
