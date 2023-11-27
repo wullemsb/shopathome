@@ -5,6 +5,7 @@ on:
     branches:
       - main
       - api
+      - databaseconnections
   pull_request:
     types: [opened, synchronize, reopened, closed]
     branches:
