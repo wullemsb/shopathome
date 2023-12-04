@@ -18,9 +18,10 @@ namespace ShopAtHome
             [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "products")] HttpRequest req,
             ILogger log)
         {
-           return new OkObjectResult(new List<Product> { new Product(10, "Strawberries", "16oz package of fresh organic strawberries", 1),
-                      new Product(20, "Sliced bread", "Loaf of fresh sliced wheat bread", 1),
-                      new Product(30, "Apples", "Bag of 7 fresh McIntosh apples", 1)}); }
+            return new OkObjectResult(new List<Product> { new Product(10, "T-Shirt", "SWA fanclub branded T-Shirt", 1),
+                      new Product(20, "Mug", "SWA fanclub branded Mug", 1),
+                      new Product(30, "Poster", "SWA fanclub branded Poster", 1)}); 
+        }
       
 
     }
