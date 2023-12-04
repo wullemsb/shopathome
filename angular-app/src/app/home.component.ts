@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
   template: `
     <div class="content-container">
       <div class="content-title-group">
-        <h2 class="title">SWA Fanclub Merchandise</h2>
+        <h2 class="title">SWA Fanclub Merchandise @ CloudBrew</h2>
         <p>
         Order your favorite SWA gadgets and merchandise! Become a preferred customer and gain access
         to discount codes, too.
