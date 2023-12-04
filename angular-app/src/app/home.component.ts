@@ -26,16 +26,6 @@ import { Component } from '@angular/core';
               My Discounts
             </a>
           </button>
-          <button class="button" aria-label="My Discounts">
-            <a
-              href="https://github.com/johnpapa/shopathome"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i class="fab fa-github"></i>
-              Code in GitHub
-            </a>
-          </button>
         </div>
       </div>
     </div>
