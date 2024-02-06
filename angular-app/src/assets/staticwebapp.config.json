@@ -8,6 +8,24 @@
           "clientIdSettingName": "ENTRA_ID",
           "clientSecretSettingName": "ENTRA_SECRET"
         }
+      },
+      "customOpenIdConnectProviders": {
+        "myProvider": {
+          "registration": {
+            "clientIdSettingName": "ENTRA_ID",
+            "clientCredential": {
+              "clientSecretSettingName": "ENTRA_SECRET"
+            },
+            "openIdConnectConfiguration": {
+              "wellKnownOpenIdConfiguration": "https://login.microsoftonline.com/0b9099d3-2abd-41ec-917d-182d75744b32/v2.0/.well-known/openid-configuration"
+            }
+          },
+          "login": {
+            "nameClaimType": "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name",
+            "scopes": [],
+            "loginParameterNames": []
+          }
+        }
       }
     }
   },

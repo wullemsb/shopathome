@@ -40,7 +40,7 @@ import { UserInfo } from '../model';
   `,
 })
 export class NavComponent implements OnInit {
-  providers = ['github', 'Microsoft Entra ID', 'aad'];
+  providers = ['github', 'Microsoft Entra ID', 'aad','myProvider'];
   userInfo: UserInfo;
 
   async ngOnInit() {
