@@ -33,10 +33,6 @@
       "route": "/deals",
       "redirect": "/some-legacy-discounts-page.html",
       "statusCode": 301
-    },
-    {
-      "route": "/.auth/login/aad",
-      "statusCode": 404
     }
   ],
   "navigationFallback": {
