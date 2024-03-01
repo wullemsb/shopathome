@@ -1,6 +1,7 @@
 {
   "platform": { "apiRuntime": "dotnet:6.0" },
   "auth":{
+    "rolesSource": "api/roles",
     "identityProviders":{
       "azureActiveDirectory": {
         "registration": {
