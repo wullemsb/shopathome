@@ -1,7 +1,16 @@
 {
   "platform": { "apiRuntime": "dotnet:6.0" },
   "auth":{
-    "rolesSource": "/api/roles"
+    "rolesSource": "/api/roles",
+    "identityProviders":{
+      "azureActiveDirectory": {
+        "registration": {
+          "openIdIssuer": "https://login.microsoftonline.com/0b9099d3-2abd-41ec-917d-182d75744b32/v2.0",
+          "clientIdSettingName": "ENTRA_ID",
+          "clientSecretSettingName": "ENTRA_SECRET"
+        }
+      }
+    }
   },
   "routes": [
     {
