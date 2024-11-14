@@ -13,6 +13,7 @@ namespace ShopAtHome
 {
     public static class ProductsGet
     {
+        //Notice that authorization is disabled at the Azure Function level.
         [FunctionName("products-get")]
         public static async Task<IActionResult> Get(
             [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "products")] HttpRequest req,
